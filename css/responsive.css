@@ -1,0 +1,88 @@
+@media only screen and (max-width: 800px) {
+    .pr-subtitle{
+        font-size:8px;
+    }
+
+    .pr-title{
+        font-size:16px;
+        line-height:20px;
+    }
+
+    .top-navigation{
+        display:none;
+    }
+
+    .menu-bars{
+        display:block;
+        
+        }
+
+
+        .header-content{
+            justify-content: space-around;
+
+            
+            }
+        
+
+
+    .project4 i{
+        color:#fff;
+        font-size:30px;
+        opacity:1;
+        position:absolute;
+        bottom:42px;
+        right:28px;
+        }
+
+    .project4 img{
+        height:100px;
+        bottom:28%;
+    }
+
+    .landing-hello h1{
+        font-family:museo-sans-300;
+        font-size:25px;
+        margin-bottom:10px;
+        }
+      
+      
+      .landing-hello h2{
+      font-family:museo-sans-700;
+      font-size:36px;
+      color:#212026;
+      }
+      
+      .landing-hello h3{
+      font-family:museo-sans-100;
+      font-size:14px;
+      color:#4e4786;
+      width:85%;
+      margin-top:35px;
+      }
+
+      .landing-hello button{
+        width:16em;
+        height: 4em;
+      }
+
+
+      .copyright-bottom{
+        font-size:12px;
+        font-family: museo-sans-500;
+        }
+        
+        
+        .inside-footer a{
+        font-size:12px;
+        font-family: museo-sans-500;
+        color:rgb(86, 13, 204);
+        }
+        
+        .contact-bottom i{
+        padding:7px;
+        font-size:14px;
+        color:#4e4786;
+        }
+
+  }

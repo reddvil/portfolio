@@ -1,0 +1,572 @@
+body {
+    height:100%;
+    background:#FCFCFE;
+    z-index:1;
+
+  }
+
+* {
+  box-sizing: border-box;
+}  
+
+.container{
+width:100%;
+max-width:1150px;
+overflow:hidden;
+margin:auto;
+}
+
+.container2{
+  width:100%;
+  max-width:1150px;
+  overflow:hidden;
+  margin:auto;
+  }
+
+.content{
+
+}
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:5;
+/* box-shadow:5px 5px 60px 10px rgb(240 243 251 / 70%); */
+background:#fff;
+/* border-bottom:0.5px solid rgb(243, 243, 243); */
+}
+
+
+.scroll-overlay{
+border-bottom:0.5px solid rgb(243, 243, 243);
+}
+
+.header-content{
+display:flex;
+align-items:center;
+justify-content: space-between;
+min-height:100px;
+width:100%;
+
+}
+
+.logo{
+display:flex;
+align-items:center;
+font-size:19px;
+font-family:'museo-sans-500';
+}
+
+
+.menu-bars{
+display:none;
+transition:0.5s;
+font-size:18px;
+background:none;
+cursor:pointer;
+font-size:22px;
+}
+
+
+.handwave{
+width:25px;
+margin-right:5px;
+}
+
+.handwave img:hover{
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 1s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%; 
+    display: inline-block;
+}
+
+
+
+.logo:hover img{
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 1.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%; 
+  display: inline-block;
+}
+
+
+
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(50.0deg) }  
+ 20% { transform: rotate(-19.0deg) }
+ 30% { transform: rotate(20.0deg) }
+ 40% { transform: rotate(-15.0deg) }
+ 50% { transform: rotate(12.0deg) }
+ 60% { transform: rotate( 0.0deg) }  
+100% { transform: rotate( 0.0deg) }
+}
+
+.handwave img{
+width:100%;
+height:100%;
+}
+
+.top-navigation{
+ display:flex;
+ align-items:center;
+}
+
+
+.top-navigation a{
+font-size:15px;
+font-family:'museo-sans-500';
+color:rgb(0, 0, 0);
+margin-left:25px;
+ }
+
+ /* content */
+
+
+
+.projects{
+display:flex;
+flex-wrap:wrap;
+transition:1.2s;
+transition: 0.5s;
+margin-top:10px;
+}
+
+.project1, .project2, .project3,.project4{
+  background:pink;
+  border-radius:20px;
+  height:290px;
+  margin:auto auto 12px auto;
+  transition:all 1s;
+  padding:27px;
+  overflow:hidden;
+}
+
+
+.pr-subtitle{
+font-size:11px;
+color:hsla(0, 0%, 100%, 0.8);
+font-family:'museo-sans-300';
+margin-bottom:12px;
+text-transform: uppercase; 
+}
+
+.pr-title{
+  font-size:30px;
+  color:#fff;
+  font-family:'museo-sans-700';
+  width:34%;
+  line-height:30px;
+}
+
+
+.project1{
+  background:rebeccapurple;
+  width:35%;
+}
+
+.project2{
+width:63%;
+background:coral;
+}
+
+
+.project3{
+  width:63%;
+  background:lightskyblue;
+
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index:9999 !important; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255); /* Black w/opacity */
+  overflow: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-content {
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;;
+  z-index:1; /* Sit on top */
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+
+}
+
+.overlay-content h1{
+
+font-family:museo-sans-700;
+font-size:24px;
+color:#616161;
+margin-bottom:20px;
+}
+.overlay-content h2{
+font-family:museo-sans-500;
+font-size:17px;
+color:#818181;
+margin-bottom:5px;
+}
+
+.overlay-content a{
+  font-family:museo-sans-300;
+  font-size:22px;
+  color:#616161;
+  margin-bottom:8px;
+  transition: 0.5s;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #8890fd;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 45px;
+  color:#000;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*  */
+
+
+
+.project4{
+    width:35%;
+  /* background:rgb(40, 107, 207); */
+  overflow: hidden;
+  background: rgb(87,87,170);
+  /* background: linear-gradient(90deg, rgba(87,87,170,1) 0%, rgba(0,155,255,1) 100%); */
+  position: relative;
+}
+
+.project4 i{
+color:#fff;
+font-size:50px;
+opacity:1;
+position:absolute;
+bottom:42px;
+right:28px;
+
+}
+
+
+.project4 img{
+  display:none;
+  position:absolute;
+  right:40%;
+  bottom:50px;
+  height:180px;
+  animation-name: bottom-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 1.2s;        /* Change to speed up or slow down */
+  animation-iteration-count:unset;  /* Never stop waving :) */
+}
+
+
+@keyframes bottom-animation {
+  0% { transform: rotate( 0.0deg) ;transform: translateY(700px); opacity:0.7; }
+ 10% { transform: rotate(25.0deg); opacity:0.1 ; }  
+ 20% { transform: rotate(-8.0deg);opacity:0.2 ;}
+ 30% { transform: rotate(14.0deg);opacity:0.3; }
+ 40% { transform: rotate(-4.0deg);opacity:0.4;}
+ 50% { transform: rotate(12.0deg); opacity:0.5; }
+ 60% { transform: rotate( 0.0deg) ; opacity:0.6;}  
+100% { transform: rotate( 0.0deg);transform: translateY(0px); opacity:1 ;}
+}
+
+
+
+/* Hello section */
+
+
+.hello-section{
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+height:31vh;
+/* background:#8e44ad; */
+background:#f64e53;
+
+margin-top:10px;
+padding:25px;
+border-radius:15px;
+
+}
+
+.hello-section a{
+font-family:museo-sans-700;
+text-transform: uppercase;
+font-size:48px;
+color:#fcfcfc;
+
+  }
+
+
+
+.landing{
+width:100%;
+height:100vh;
+/* background: #fff; */
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+
+.landing-hello{
+  animation-name: hello-landing;  /* Refers to the name of your @keyframes element below */
+  animation-delay: 0.1s;
+  animation-duration: 1.2s;        /* Change to speed up or slow down */
+  animation-iteration-count:unset;  /* Never stop waving :) */
+}
+
+@keyframes hello-landing {
+  0% { transform: translateX(-700px); opacity:0.7; }
+100% { transform: translateX(0px); opacity:1 ;}
+}
+
+
+.landing-hello h1{
+  font-family:museo-sans-300;
+  font-size:32px;
+  margin-bottom:10px;
+  }
+
+
+.landing-hello h2{
+font-family:museo-sans-700;
+font-size:53px;
+color:#212026;
+}
+
+.landing-hello h3{
+font-family:museo-sans-100;
+font-size:16px;
+color:#4e4786;
+width:70%;
+margin-top:35px;
+}
+
+.landing-hello button{
+width:18em;
+height: 4em;
+background:#5041d0;
+border-radius:100px;
+color:#fff;
+font-family:museo-sans-700;
+font-size:12px;
+margin-top:35px;
+transition:0.8s;
+cursor:pointer;
+}
+
+
+.landing-hello button:hover{
+opacity:0.7;
+}
+
+.mockup{
+width:80vmin;
+animation-name: mockup-landing;
+animation-delay: 0.2s;
+animation-duration: 1.1s;        /* Change to speed up or slow down */
+animation-iteration-count:unset;  /* Never stop waving :) */
+}
+
+
+@keyframes mockup-landing {
+  0% { transform: translateX(700px); opacity:0.7; }
+100% { transform: translateX(0px); opacity:1 ;}
+}
+
+
+
+footer{
+  border-top:1px solid rgb(219, 219, 219);
+  margin-top:50px;
+  width:100%;
+}
+
+.inside-footer{
+height:120px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+
+.copyright-bottom{
+font-size:15px;
+font-family: museo-sans-500;
+}
+
+
+.inside-footer a{
+font-size:15px;
+font-family: museo-sans-500;
+color:rgb(131, 29, 226);
+}
+
+.contact-bottom i{
+padding:7px;
+font-size:18px;
+color:#4e4786;
+}
+
+
+
+section{
+display:flex;
+margin-top:120px;
+flex-wrap:wrap;
+justify-content: space-evenly;
+overflow:hidden;
+}
+
+section .card{
+height:320px;
+width:350px;
+background:#fafafa;
+/* margin:10px; */
+position: relative;
+box-sizing: border-box;
+margin-bottom:20px;
+-webkit-box-shadow: 0px 0px 10px 3px rgba(216,202,219,0.35);
+-moz-box-shadow: 0px 0px 10px 3px rgba(216,202,219,0.35);
+box-shadow: 0px 0px 10px 3px rgba(216,202,219,0.35);
+padding:10px;
+}
+
+.card img{
+  height:100%;
+  width:100%;
+  object-fit: fill;
+  object-position: center;
+  border-radius:15px;
+}
+
+.card-img h1{
+  font-size:22px;
+  color:rgb(141, 141, 141);
+  font-family:museo-sans-300; 
+
+}
+
+.card-img{
+height:100%;
+display:flex;
+align-items:center;
+justify-content: center;
+}
+
+.pr-description{
+opacity:0;
+position: absolute;
+top:0;
+left:0;
+height:100%;
+width:100%;
+background:rgba(6, 40, 151, 0.7);
+color:#fff;
+transition: 0.3s;
+display:flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+text-align:center;
+padding:20%;
+}
+
+.pr-description h1{
+font-size:24px;
+color:#fff;
+font-family:museo-sans-700;
+line-height:25px;
+}
+
+.pr-description button{
+width:9em;
+height:3em;
+margin-top:35px;
+color:#fff;
+border-radius:50px;
+font-family:museo-sans-700;
+font-size:15px;
+background: rgb(115, 113, 243);
+cursor:pointer;
+
+}
+
+
+.pr-description button:hover{
+background:rgb(111, 109, 223);
+  
+  }
+
+section .card:hover .pr-description{
+opacity:1;
+}
+
+
+
+
+.menu-overlay{
+position: fixed;
+top:100px;
+left:0;
+height:0%;
+width:100%;
+background:rgb(248, 248, 248);
+z-index:55;
+transition:0.5s;;
+overflow:hidden;
+display:flex;
+justify-content:center;
+}
+
+
+.active-mobile{
+  height:100%;
+  padding-top:25vmin;
+}
+
+.mobile-menu{
+display:flex;
+flex-direction: column;
+
+}
+
+
+.mobile-menu a{
+font-size:24px;
+font-family:museo-sans-500;
+padding:10px;
+color:#000;
+  
+  }
