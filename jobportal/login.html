@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>.Jobportal</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"> 
+    <link rel="stylesheet" type="text/css" href="css/all.min.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script> 
+
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+</head>
+<body>
+<div class="wrapper">
+<header class="header" id="navbar">
+<div class="container">
+<div class="inner_header">
+   <div class="logo"><a href="index.html"><img src="img/logo.png" alt="" class="logo_img"></a></div> 
+   <div class="navi">
+        <a href="" class="nav_link">ვაკანსიები</a>
+        <a href="" class="nav_link">კომპანიები</a>
+        <a href="" class="nav_link">რეკლამა</a>
+        <a href="" class="nav_link">კონტაქტი</a>
+   </div>
+   <!-- <div class="profile"><div class="avatar"><img src="img/avatar.png" alt="" class="avatar_img"></div><a href="" class="avtar_title">John Doe</a><i class="fas fa-caret-down"></i></div> -->
+
+   <div class="auth">
+   <a href="login.html"><button class="auth_btn">Login</button></a>
+   <a href="register.html"><button class="reg_btn">Register</button></a>
+   </div>
+   
+   <div class="responsive-menu" onclick="openNav()"><i class="far fa-bars"></i></div>
+
+
+   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="" class="nav_link">ვაკანსიები</a>
+    <a href="" class="nav_link">კომპანიები</a>
+    <a href="" class="nav_link">რეკლამა</a>
+    <a href="" class="nav_link">კონტაქტი</a>
+  </div>
+  
+
+
+</div> 
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>  
+</header>
+
+<div class="content">
+ <div class="container">
+        
+
+  <form action="#" class="auth-form">
+    
+    <label for="email"><b>E-mail</b></label>
+    <input type="text" placeholder="Enter E-mail" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="" name="remember"> Remember me
+      <br> Not Registered yet? <a href="register.html">Register</a>
+    </label>
+
+      <label>
+    </label>
+
+
+  </form>
+
+
+
+</div>   
+
+<footer class="footer">
+    <div class="container">
+    <div class="inner-footer">
+        <div class="copyright"><h1>ყველა უფლება დაცულია. JOBPORTAL -ის მიერ</h1></div>
+        <div class="footer_author"><h1>Made With <i class="fad fa-heart" style="font-size:12px; color:blue;"></i></h1></div>
+        <div class="footer_author"><h1>შექმნილია ZURAWEB - ში.</h1></div>
+
+    </div>
+</div>
+</footer>
+
+<script src="js/index.js"></script>       
+</body>
+</html>

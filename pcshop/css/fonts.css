@@ -1,0 +1,31 @@
+@font-face {
+    font-family:'bpg';
+    src: url(../fonts/bpg-arial-caps-webfont.ttf); 
+   }
+
+
+   @font-face {
+    font-family:'mrgvlovani_caps';
+    src: url(../fonts/bpg_mrgvlovani_caps_2010.ttf); 
+   }
+
+
+
+@font-face {
+    font-family:'bpgcaps';
+    src: url(../fonts/bpgcaps.ttf); 
+   } 
+
+
+@font-face {
+    font-family:'bpgweb';
+    src: url(../fonts/bpg-web-002-webfont.ttf); 
+   }   
+
+
+@font-face {
+    font-family:'lg';
+    src: url(../fonts/lg.ttf); 
+   } 
+
+

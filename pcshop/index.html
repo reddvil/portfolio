@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PCSHOP</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+</head>
+<body id="body">
+
+<header class="header">
+	<div class="info_bar">
+		<div class="container">
+			<div class="inner-info">
+				<div class="cxeli_xazi">
+					<a href=""><i class="bi bi-telephone-fill"></i></a>ცხელი ხაზი<a href="" class="tel-number">+995 (32) 2 60 30 60</a>
+				</div>
+
+				<div class="navi">	
+				<a class="nav_link" href="#">ონლაინ განვადება</a>
+				<a class="nav_link" href="#">როგორ შევიძინო?</a>
+				<a class="nav_link" href="#">მიტანის მეთოდი</a>	
+				<a class="nav_link" href="#">რეკლამა</a>	
+				<a class="nav_link active" href="#"><i class="bi bi-gift"></i> საჩუქრები</a>	
+
+			</div>
+				<div class="cart">
+							<div id="mySidebar" class="sidebar">
+							  <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+							  <div class="cart_content">
+							  <center><h1 class="cart_title">კალათა</h1></center>
+							  <div class="cart-items">
+							  	<div class="cart_item"><img src="img/product.jpg" alt="" class="cart_thumbnail"> <a href="#" class="cart_item_title">HP Pavilion Laptop 15-cw1033ur 155X0EA</a> <a href="#" class="cart_item_price">ფასი: 49$</a><i class="fas fa-times"></i></div>
+							  	<div class="cart_item"><img src="img/product.jpg" alt="" class="cart_thumbnail"> <a href="#" class="cart_item_title">HP Pavilion Laptop 15-cw1033ur 155X0EA</a> <a href="#" class="cart_item_price">ფასი: 49$</a><i class="fas fa-times"></i></div>
+							  	<div class="cart_item"> <img src="img/product.jpg" alt="" class="cart_thumbnail"><a href="#" class="cart_item_title">HP Pavilion Laptop 15-cw1033ur 155X0EA</a> <a href="#" class="cart_item_price">ფასი: 49$</a><i class="fas fa-times"></i></div>
+					
+							  </div>
+							  <div class="entrie_price"><h1>სულ: 454$</h1><button class="checkout">შეძენა</button></div>
+							</div>
+						</div>
+					<a href="#" onclick="openCart()"><i class="bi bi-bag-plus-fill"></i>კალათა</a>
+				</div>
+		
+			</div>
+		</div>
+	</div>
+
+	<div class="head_bar">
+		<div class="container">
+			<div class="inner-head">
+
+				<div class='logo'><a href=""><img src="logo.png" alt=""></a><span class="tooltiptext">PCPARTS.GE</span></div>
+				<div class="search_bar">
+					<form action="/action_page.php">
+					<i class="bi bi-search" type="submit"></i>
+	      			<input type="text" placeholder="ძებნა..." name="search">
+	    			</form>
+				</div>
+
+				<div class="profile">
+					<button class="login" id="profile_btn">შესვლა</button>
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- Modal content -->
+						  <div class="modal-content">
+						    <span class="close">&times;</span>
+
+<div class="container_auth">
+<form name="AuthForm">
+  <div class="auth-container">
+    <div class="auth-form">
+        <h1>ავტორიზაცია</h1>
+        <p>შეავსეთ ყველა ველი რეგისტრაციის გასავლელად.</p>
+        <br>
+        <hr>
+
+        <label for="email"><b>ელ-ფოსტა</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <br>
+        <label for="psw"><b>პაროლი</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <hr>
+        <button  class="signbtn2">ავტორიზაცია</button>
+        <br>
+        <div class="signin">
+        <p>არ გაქვთ აკაუნტი? <a href="register.html">რეგისტრაცია</a>.</p>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+						  
+						  </div>
+
+						</div>	
+					<a href="" class="compare" id="compare_btn"><i class="bi bi-caret-down-square-fill"></i></a>
+					<a href="" class="bookmarks" id="bookmarks_btn"><i class="bi bi-bookmark-fill"></i></a>
+				</div>
+				<script src="js/index.js"></script>
+
+			</div>
+		</div>
+		</div>
+
+</header>	
+
+<!-- slider -->
+<div class="swiper_top">
+	<div class="swiper-container swiper1">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img class=" slide_img" src="img/sl1.jpg" alt=""></div>
+			<div class="swiper-slide"><img class=" slide_img" src="img/sl1.jpg" alt=""></div>
+			<div class="swiper-slide"><img class=" slide_img" src="img/sl1.jpg" alt=""></div>
+			<div class="swiper-slide"><img class=" slide_img" src="img/sl1.jpg" alt=""></div>
+		</div>
+		<div class="swiper-pagination swiper-pagination1"></div>
+<!-- 		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div> -->
+	</div>
+<div class="container">
+	<div class="sl_nav">
+		<div class="nav_title"><i class="fas fa-bars"></i> <h1>კატეგორიები</h1></div>
+			<div class="sl_links">
+
+				<div class="dropdown">
+				<a class="sl_link" href="#"><i class="fas fa-microchip"></i> დედაპლატები</a>
+					<div class="dropdown-content">
+					    <a href="#">Link 1</a>
+					    <a href="#">Link 2</a>
+					    <a href="#">Link 3</a>
+				  </div>
+				</div>
+
+				<a class="sl_link" href="#"><i class="fas fa-laptop-code"></i> ვიდეო ბარათები</a>
+				<a class="sl_link" href="#"><i class="fas fa-headset"></i> აქსესუარები</a>	
+				<a class="sl_link" href="#"><i class="fas fa-mouse-pointer"></i> მაუსები</a>
+				<a class="sl_link" href="#"><i class="fas fa-keyboard"></i> კლავიატურა</a>
+				<a class="sl_link" href="#"><i class="fas fa-desktop"></i> მონიტორები</a>
+	
+			</div>
+	</div>
+</div>
+	</div>
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>	
+
+	<script>
+		var swiper1 = new Swiper('.swiper1', {
+  loop: true,
+  slidesPerView: 1,
+
+  pagination: {
+    el: '.swiper-pagination1',
+    clickable: true,
+    dynamicBullets: false,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next1',
+    prevEl: '.swiper-button-prev1',
+  },
+
+  autoplay: { 
+  	delay: 2000, 
+  },
+
+  keyboard: {
+        enabled: true,
+      },
+
+
+
+})
+	</script>
+<!-- slider-end -->
+
+
+<div class="new_products">
+	<div class="container">	
+
+		<div class="newproduct_title"><div class="product_icon"><i class="fas fa-fire"></i></div>ახალი პროდუქცია</div>
+		<div class="product_section">
+
+			<div class="card_wrapper">
+				<div class="card">
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+			
+			<div class="card_wrapper">
+				<div class="card">
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<div class="card">
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>	
+
+			<div class="card_wrapper">
+				<div class="card">
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<div class="card">
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+		</div>	
+		</div>
+	</div>
+</div>
+
+
+<!--  -->
+
+<div class="new_products">
+	<div class="container">	
+		<div class="newproduct_title"><div class="product_icon"><i class="fas fa-hourglass-start"></i></i></div>ფასდაკლებები</div>
+		<div class="product_section">
+
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+			
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+
+		</div>	
+		</div>
+	</div>
+</div>
+<!--  -->
+
+<div class="new_products">
+	<div class="container">	
+		<div class="newproduct_title"><div class="product_icon"><i class="fas fa-star-half-alt"></i></div>პოპულარული პროდუქტები</div>
+		<div class="product_section">
+
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+			
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+			<div class="card_wrapper">
+				<div class="card">
+					<div class="sale_badge"><i class="fas fa-clock"></i>Sale</div>
+				    <img src="img/product.jpg" alt="">
+				    <div class="product_title"><a href="">დასახელება</a></div>
+				    <div class="product_price"><a href="">3 199 ₾</a></div>
+				    <div class="sale_price"><a href="">3 400 ₾</a></div>
+				    <div class="card_nav">
+				    	<a href="" class="shedareba"><i class="bi bi-arrows-angle-contract"></i> შედარება</a>
+				    	<a href="" class="heart"><i class="bi bi-heart"></i></a>
+				    	<button class="buy" id="buy_btn"><i class="bi bi-cart2"></i></button>
+				    </div>	
+				</div>
+			</div>
+
+
+		</div>	
+		</div>
+	</div>
+</div>
+<!--  -->
+
+
+
+<footer class="footer">
+	<div class="container">
+		<div class="inner-footer">
+			<div class="footer_column">
+				<div class="column_title"><i class="fas fa-clone"></i><h1>ჩვენს შესახებ</h1></div>
+				<a href="" class="footer_a">ჩვენ შესახებ</a>
+				<a href="" class="footer_a">კონტაქტი</a>
+				<a href="" class="footer_a">კონტაქტი</a>
+				
+			</div>
+			<div class="footer_column">
+				<div class="column_title"><i class="fas fa-clone"></i><h1>ჩემი პროფილი</h1></div>
+				<a href="" class="footer_a">ჩვენ შესახებ</a>
+				<a href="" class="footer_a">კონტაქტი</a>
+				<a href="" class="footer_a">კონტაქტი</a>
+			</div>
+
+			<div class="footer_column">
+				<div class="column_title"><i class="fas fa-clone"></i><h1>წესები და პირობები</h1></div>
+				<a href="" class="footer_a">ჩვენ შესახებ</a>
+				<a href="" class="footer_a">კონტაქტი</a>
+				<a href="" class="footer_a">კონტაქტი</a>
+			</div>
+
+
+					<div class="footer_column">
+				<div class='logo-footer'><a href=""><img src="img/logo-footer.png" alt=""></a></div>		
+				<div class="socials"><a href="" class="footer_a"><i class="fab fa-facebook"></i><i class="fab fa-facebook-messenger"></i><i class="fab fa-viber"></i></a></div>
+				
+			</div>
+
+		</div>
+	</div>
+		<div class="copyright_column">
+			<div class="container">
+			<div class="copyrights">
+		<h1>უფლებები დაცულია PCPARTS.GE -ს მიერ</h1> <h2>We Use<i class="fab fa-cc-visa"></i>    <i class="fab fa-cc-mastercard"></i> Visa / Mastercard</h2>
+		</div>
+		</div>
+			</div>
+
+
+	</div>	
+</footer>
+	<script src="js/index.js"></script>
+</body>
+</html>

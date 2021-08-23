@@ -1,0 +1,837 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+box-sizing:border-box;   
+background:rgb(246,248,249);
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+
+body{
+box-sizing: border-box;
+transition:0.3s; 
+overflow-x:hidden; 
+}
+
+button{
+  cursor:pointer;
+  transition:0.1s ease-in;
+
+}
+
+button:active{
+  cursor:pointer;
+  opacity:0.8;
+  
+}
+
+.container{
+max-width:1200px;
+width:100%;
+margin:auto;
+height:100%;
+overflow-x:hidden;   
+}
+
+.header{
+position:fixed;
+background:#ffffff;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+transition:all 0.5s;
+box-shadow: 5px 5px 60px 10px rgb(240 243 251 / 70%);
+}
+
+
+.inner_header{
+height:80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+width:100%;
+overflow:hidden;
+
+}
+
+.logo img{
+height:33px;
+}
+
+.inner_header .auth_btn{
+font-family:mont-semibold;
+color:#000;
+background:transparent;
+border:0.5px solid #e8edef;
+height:43px;
+width:110px;
+cursor:pointer;
+border-radius:7px;
+}
+
+.inner_header .reg_btn{
+font-family:mont-semibold;
+color:#fff;
+background:#4e6fd3;
+height:43px;
+width:110px;
+cursor:pointer;
+border-radius:7px;
+}
+
+
+.navi{
+display:flex;
+flex-wrap:wrap;
+overflow-wrap: wrap;
+}
+
+
+.navi a{
+font-size:14px;
+font-family:bpg;
+color:rgb(5, 0, 31);
+text-indent:27px;
+/* font-weight:bold; */
+}
+
+
+.progress-container {
+    width: 100%;
+    height: 2px;
+    background: rgba(224, 224, 224, 0.7);
+  }
+  
+  .progress-bar {
+    height: 2px;
+    background: #4caf50;
+    width: 0%;
+  }
+
+
+.avatar{
+height:42px;
+width:42px;
+border:3px solid #eeeeee;
+border-radius:50%;
+}
+
+.avatar img{
+height:100%;
+border-radius:50%;
+}
+
+.profile{
+display:flex;
+align-items:center;
+}
+
+.profile a{
+font-family:bpg;
+text-align:center;
+font-size:13px;
+margin-left:5px;
+color:rgb(34, 34, 34)
+}
+
+.profile i{
+font-size:12px;
+margin-left:3px;
+}
+
+
+
+
+
+.content{
+width:100%;
+height:100%;
+margin-top:80px;
+background:rgb(246,248,249);
+overflow-x:hidden;
+
+}
+
+
+.categories{
+   display:flex;
+/*   flex-wrap:wrap;*/   
+justify-content:space-between;
+   padding-top:15px;
+    
+}
+
+.category{
+background:#fff;
+height:180px;
+width:187px;
+padding:20px 10px 10px 10px;
+border-radius:15px;
+display:flex;
+flex-direction:column;
+justify-content: space-between;
+cursor:pointer;
+}
+
+
+.title_gap .title{
+font-family:'mont-bold';
+font-size:16px;
+letter-spacing:0.5px;
+padding-bottom:4px;
+color:rgb( 15,2,80)
+}
+
+.title_gap .jobs_count{
+font-family:'mont-semibold';
+font-size:14px;
+color:rgb( 188,188,200)
+}
+
+
+.title_gap{
+height:55px;
+border-radius:10px;
+width:100%;
+background:rgba(48,73,186,0.05);
+padding:12px;
+
+
+}
+
+.icon{
+position: relative;
+height:35px;
+width:35px;
+z-index:1;
+border-radius:10px;
+background:rgba(48,73,186,0.1);
+}
+
+
+.icon img{
+position: absolute;
+top:35%;
+left:35%;
+}
+
+.main_title{
+padding-top:25px;
+padding-bottom:25px;
+padding-right:15px;
+font-size:20px;
+
+font-family:'mont-semibold'
+}
+
+
+.location{
+width:142px;
+border-radius:13px;
+background:rgba(43, 29 ,232 , 0.1);
+font-family:'mont-bold';
+color:rgba(43, 29 ,232 , 0.4);
+font-size:13px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+border:1px solid #c3c2f8;
+
+}
+
+.locations{
+display:flex;
+overflow:auto;
+justify-content:space-between;
+padding-top:10px;
+text-transform: uppercase;
+cursor:pointer;
+}
+
+
+
+.jobs_list{
+display:flex;
+justify-content:space-between;
+padding-top:15px;
+flex-wrap:wrap;
+margin:auto;
+
+}
+
+
+.job-item{
+width:280px;
+border-radius:15px;
+height:170px;
+background:#fff;
+padding:25px 15px 15px 15px;
+box-shadow: 5px 5px 60px 10px rgb(240 243 251 / 80%);
+display:flex;
+flex-direction: column;
+justify-content:space-between;
+margin-bottom:15px;
+}
+
+
+.company{
+display:flex;
+align-items:center;
+}
+
+.company-logo img{
+height:37px;
+margin-right:5px;
+}
+
+.vacansy-title h1{
+font-size:16px;
+font-family:'mont-bold';
+padding-bottom:3px;
+color:rgb(15,2,80,1);
+}
+
+
+.vacansy-title h2{
+font-size:14px;
+font-family:'mont-semibold';
+color:rgb(15,2,80,0.6);
+}
+
+.vacansy-title a{
+  color:inherit;
+}
+
+.job-description{
+width:100%;
+background:rgb(48,73,176,0.04);
+height:70px;
+border-radius:10px;
+color:rgb(188,188,200);
+display:flex;
+flex-direction: column;
+justify-content:center;
+padding-left:12px;
+}
+
+.job-place{
+display:flex;
+align-items:center;
+padding:5px;
+font-size:14px;
+font-family:'mont-semibold';
+}
+
+.job-skills{
+    display:flex;
+align-items:center;
+    font-family:'mont-semibold';
+    font-size:12px;
+    padding:5px;
+}
+
+.job-description i{
+font-size:13px;
+margin-right:4px;
+}
+
+
+.show_more{
+width:100%;
+height:45px;
+color:rgba(0, 0, 0, 0.753);
+background:rgba(84, 68, 153, 0.1);
+font-size:12px;
+font-family:bpgle;
+border-radius:5px;
+margin-top:10px;
+cursor:pointer;
+}
+
+
+.search_section{
+margin-top:20px;
+position:relative;
+width:100%;
+height:80px;
+background:#fff;
+box-shadow: 5px 5px 60px 10px rgb(240 243 251 / 80%);
+border-radius:2px;
+display:flex;
+align-items:center;
+justify-content: space-between;
+margin-top:15px;
+}
+
+.search_section input{
+height:100%;
+width:40%;
+outline:none;
+text-indent:45px;
+font-size:11px;
+font-family:bpgle;
+
+border:none;
+}
+
+.search_section i{
+position:absolute;
+font-size:16px;
+top:50%;
+left:15px;
+opacity:0.8;
+transform: translateY(-50%);
+}
+
+
+#search-location{
+width:17%;
+font-family:bpgweb;
+font-size:17px;
+padding:10px;
+outline:none;
+border:none;
+height:50%;
+margin-right:20px;
+}
+
+
+.search_section label{
+font-family:'mont-semibold';
+font-size:14px;
+opacity:0.7;
+margin-right:2px;
+}
+
+
+.search_section button{
+color:#fff;
+font-size:12px;
+width:6rem;
+height:4rem;
+border-radius:8px;
+font-family:bpgle;
+cursor:pointer;
+background:#4E6FD3;
+margin-right:5px;
+}
+
+/**/
+
+.search_mobile{
+position:relative;
+width:100%;
+height:40px;
+background:#fff;
+display:none !important;
+box-shadow: 5px 5px 60px 10px rgb(240 243 251 / 80%);
+border-radius:2px;
+display:flex;
+align-items:center;
+justify-content: space-between;
+margin-top:15px;
+}
+
+.search_mobile input{
+height:100%;
+width:80%;
+outline:none;
+text-indent:45px;
+font-size:11px;
+font-family:bpgle;
+border:none;
+}
+
+.search_mobile i{
+position:absolute;
+font-size:16px;
+top:50%;
+left:15px;
+opacity:0.8;
+transform: translateY(-50%);
+}
+
+.search_mobile button{
+color:#fff;
+font-size:12px;
+width:20%;
+height:80%;
+border-radius:5px;
+font-family:bpg;
+cursor:pointer;
+background:#5968f7;
+margin-right:5px;
+}
+
+
+
+.footer{
+    background:rgb(246,248,249);
+width:100%;
+height:70px;
+margin-top:25px;
+}
+
+
+.inner-footer{
+    border-top:0.5px solid rgb(230, 230, 230);
+    display:flex;
+    align-items:center;
+    height:100%;
+    justify-content:space-between;
+}
+
+.copyright h1{
+    font-family:bpglecaps;
+font-size:11px;
+color:#000264
+}
+
+.footer_author h1{
+    font-family:bpglecaps;
+    font-size:11px;
+    color:#000264
+}
+
+
+.showcat{
+display:none;
+height:32px;
+width:80px;
+background: #b3b3b3;
+border-radius: 10px;
+font-family:'mont-semibold';
+color:#fff;
+cursor:pointer;
+opacity:0.5;
+}
+
+
+.active1{
+    display:flex !important;
+    opacity:1 !important;
+}
+
+.cat-gap{
+display:flex;
+align-items:center;;
+}
+
+
+
+
+
+/**/
+
+.inner-wrapper{
+background:#c3c2f8;
+height:1000px;
+}
+
+
+.responsive-menu i{
+font-size:24px;
+margin-right:25px;
+cursor:pointer;
+}
+
+
+.responsive-menu{
+display:none;
+    }
+
+
+    
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #F5F5F5; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y:hidden;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    -webkit-box-shadow: 0px -6px 17px 0px rgba(50, 50, 50, 0.4);
+-moz-box-shadow:    0px -6px 17px 0px rgba(50, 50, 50, 0.4);
+box-shadow:         0px -6px 17px 0px rgba(50, 50, 50, 0.4);
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family:bpglecaps;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #3d3d3d;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+  .job-item02{
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+  border-radius:10px;
+border:0.5px solid rgb(230, 230, 230);
+align-items:center;
+margin-bottom:10px;
+  }
+
+
+  .company02{
+  display:flex;
+  align-items:center;
+  }
+
+
+  .job-description02{
+width:24%;
+background:rgb(48,73,176,0.07);
+padding:2px;
+border-radius:10px;
+color:rgb(188,188,200);
+display:flex;
+flex-direction: column;
+justify-content:center;
+padding-left:12px;
+}
+
+
+.job-buttons02{
+  display:flex;
+  align-items: center;
+}
+
+
+.job-buttons02 .salary-btn{
+width:7rem;
+height:50px;
+border-radius:10px;
+font-size:15px;
+background:#E5E6F0;
+color:#000;
+font-weight:700;
+}
+
+.job-buttons02 .details-btn{
+  width:7rem;
+  height:50px;
+  margin-left:10px;
+  font-size:15px;
+  font-weight:700;
+  color:#fff;
+  background:#4E6FD3;
+  border-radius:10px;
+}
+
+
+
+/*auth form*/
+
+
+.auth-form{
+display:flex;
+flex-direction:column;
+font-family:bpg;
+font-size:13px;
+width:50%;
+margin:50px auto;  
+}
+
+.auth-form label{
+margin-bottom:10px;
+font-weight:700;
+}
+
+
+.auth-form input{
+outline:none;
+border:none;
+padding:25px;
+margin-bottom:18px;
+border-radius:10px;
+background:#fff;
+}
+
+.auth-form textarea{
+  outline:none;
+  border:none;
+  padding:25px;
+  width:100%;
+  resize: vertical;
+  min-height:150px;
+  margin-bottom:18px;
+  border-radius:10px;
+  }
+
+
+.auth-form button{
+padding:20px;
+background:#4E6FD3;
+border-radius:10px;
+font-size:17px;
+font-weight:700;
+color:#fff;
+margin-bottom:15px;
+}
+
+
+.auth-form input:focus{
+background:#e8e9ea;
+}
+
+.auth-form button:focus{
+opacity:0.8;
+}
+
+
+.header-info{
+height:25vh;
+width:100%;
+background:#37509b;
+display:flex;
+align-items: center;
+border-bottom-left-radius:30px;
+border-bottom-right-radius: 30px;
+}
+
+
+.header-info h1{
+padding:25px;
+font-size:32px;
+font-weight:600;
+color:#fff;
+text-transform:uppercase;
+font-family:mont-bold;
+}
+
+.job-inner{
+
+  height:800px;
+  width:100%;
+  border-radius:20px;
+  background: #fff;
+     height:100%;
+
+}
+
+
+.job-img-head{
+  border:4px solid #F1F1F5;
+  height:150px;
+  width:150px;
+  border-radius:20px;
+}
+
+.job-img-head img{
+  height:100%;
+  width: 100%;
+  object-fit:cover;
+   border-radius:20px;
+
+}
+
+.job-header{
+  display:flex;
+  font-family:mont-semibold;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding:25px;
+  border-bottom: 2px solid #F1F1F5;
+}
+
+
+.job-header h2{
+margin-bottom:10px;
+
+}
+
+.job-header h1{
+font-size:19px;
+
+}
+
+.job-desc2{
+margin-left:25px;
+}
+
+
+.job_btns button{
+padding:22px;
+font-size:16px;
+font-weight:700;
+background:#F1F1F5;
+border-radius:10px;
+margin:10px;
+}
+
+.job_btns{
+  display: flex;
+  align-items:center;
+}
+
+.company-head{
+display:flex;
+align-items:center;
+}
+
+.job-description03{
+    padding:45px;
+
+}
+
+.job-description03 p{
+  font-size:15px;
+  font-family:bpg;
+  margin-bottom:45px;
+  margin-left:3px;
+  padding-right:50px;
+  opacity:0.7;
+
+}
+
+.job-description03 h1{
+  font-size:15px;
+  font-family:mont-semibold;
+  font-weight:800;
+  margin-bottom:35px;
+}

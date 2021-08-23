@@ -1,0 +1,71 @@
+@font-face {
+    font-family:'bpg';
+    src: url(../fonts/bpg-arial-caps-webfont.ttf); 
+   }
+
+@font-face {
+    font-family:'bpgcaps';
+    src: url(../fonts/bpgcaps.ttf); 
+   } 
+
+
+@font-face {
+    font-family:'lg';
+    src: url(../fonts/lg.ttf); 
+   } 
+
+
+
+
+@font-face {
+    font-family:'bpgweb';
+    src: url(../fonts/bpg-web-002-webfont.ttf); 
+   } 
+
+
+@font-face {
+    font-family: 'bpgle';
+    src: url('../fonts/bpg-le-studio-02-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-le-studio-02-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-le-studio-02-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-le-studio-02-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-le-studio-02-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-le-studio-02-webfont.svg#bpg_le_studio_02regular') format('svg'); /* Legacy iOS */
+    
+}
+
+
+@font-face{
+font-family:bpglecaps;
+    src: url('../fonts/bpg-le-studio-02-caps-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-le-studio-02-caps-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-le-studio-02-caps-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-le-studio-02-caps-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-le-studio-02-caps-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-le-studio-02-caps-webfont.svg#bpg_le_studio_02_capsregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family:'bpg111';
+    src: url(../fonts/bpg_111.ttf); 
+   } 
+
+@font-face {
+    font-family:'bpg111caps';
+    src: url(../fonts/bpg_111_caps.ttf); 
+   } 
+
+
+   @font-face {
+    font-family:'mont-semibold';
+    src: url(../fonts/mont-semibold.ttf); 
+   }  
+   
+   
+   @font-face {
+    font-family:'mont-bold';
+    src: url(../fonts/mont-bold.ttf); 
+   }    
+
+
+
